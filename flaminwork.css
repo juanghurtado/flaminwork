@@ -168,8 +168,12 @@ h6 {
 /* =|Lists
 ------------- */
 ul, ol {
-	margin-left: 1em;
+	margin-left: 2em;
 }
+
+	li {
+		list-style-position: outside;
+	}
 
 	ul li {
 		list-style-type: disc;
@@ -210,13 +214,14 @@ dl {
 table {
 	border-right: 1px solid #ccc;
 	border-top: 1px solid #ccc;
+	width: 100%;
 }
 
 	table th, table td {
 		border-bottom: 1px solid #ccc;
 		border-left: 1px solid #ccc;
 		line-height: 1.4467em;
-		padding: .36175em 0.25em;
+		padding: 0.25em;
 		vertical-align: middle;
 	}
 
@@ -255,10 +260,10 @@ button, input, select, textarea {
 	vertical-align: middle;
 }
 
-input[type=button], input[type=submit], button, input[type=text], input[type=password], textarea, select {
+button, input, textarea, select {
 	border: 1px solid #a9a9a9;
 	color: #555;
-	padding: .354175em 0.15em;
+	padding: 0.25em;
 }
 
 /* Textareas */
@@ -275,6 +280,7 @@ textarea {
 
 	.radio label, .checkbox label {
 		display: inline-block;
+		margin-right: 1em;
 	}
 
 	.radio input, .checkbox input {
@@ -297,9 +303,7 @@ button {
 	background: #E5E5E5;
 	color: #333;
 	cursor: pointer;
-	font-size: 1.15em;
 	height: auto;
-	padding: 0.1em 0.25em;
 	width: auto;
 }
 
