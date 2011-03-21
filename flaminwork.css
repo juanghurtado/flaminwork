@@ -120,18 +120,21 @@ input, select {
 
 /* =|Body
 ------------- */
-body {
-	color: #444444;
+body,
+button, input, textarea, select {
 	font: 13px/1.231 Helvetica, Arial, sans-serif;
 	*font-size: small;
-	margin: 1.5em 2em;
+}
+
+body {
+	color: #444444;
 }
 
 /* =|Texts
 ------------- */
 h1, h2, h3, h4, h5, h6, ul, ol, dl, p, table, fieldset, form {
 	font-size: 1em;
-	margin: 1.5em 0;
+	margin: 0 0 1em 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -139,28 +142,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 2.3em;
+	font-size: 1.84615em;
 }
 
 h2 {
-	font-size: 2em;
+	font-size: 1.69230em;
 }
 
 h3 {
-	font-size: 1.8333em;
-
+	font-size: 1.53846em;
 }
 
 h4 {
-	font-size: 1.6666em;
+	font-size: 1.38461em;
 }
 
 h5 {
-	font-size: 1.5em;
+	font-size: 1.230769em;
 }
 
 h6 {
-	font-size: 1.3333em;
+	font-size: 1em;
 }
 
 /* =|Lists
@@ -179,9 +181,8 @@ ul, ol {
 
 dl {
 	border-bottom: 1px solid #ddd;
-	margin: 0;
 	overflow: hidden;
-	width: 100%;
+	width: auto;
 }
 
 	dl dt {
@@ -209,8 +210,6 @@ dl {
 table {
 	border-right: 1px solid #ccc;
 	border-top: 1px solid #ccc;
-	margin: 0;
-	width: 100%;
 }
 
 	table th, table td {
@@ -230,20 +229,12 @@ table {
 
 /* =|Forms
 ------------------ */
-form {
-	width: 100%;
-}
-
-	form p {
-		margin-left: 0.5em;
-		margin-right: 0.5em;
-	}
+form {}
 
 /* Group fields */
 fieldset {
 	border: 1px solid #ddd;
-	margin: 1.4167em 0;
-	padding: 0 0.5em;
+	padding: 1em 1em 0 1em;
 }
 
 	fieldset legend {
@@ -261,13 +252,12 @@ label {
 /* Fields */
 button, input, select, textarea {
 	margin: 0;
+	vertical-align: middle;
 }
 
 input[type=button], input[type=submit], button, input[type=text], input[type=password], textarea, select {
 	border: 1px solid #a9a9a9;
 	color: #555;
-	font-size: 1em;
-	font-family: inherit;
 	padding: .354175em 0.15em;
 }
 
