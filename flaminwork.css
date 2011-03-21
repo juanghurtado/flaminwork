@@ -255,28 +255,21 @@ label {
 }
 
 /* Fields */
-button, input, select, textarea {
-	margin: 0;
-	vertical-align: middle;
-}
-
 button, input, textarea, select {
 	border: 1px solid #a9a9a9;
 	color: #555;
+	margin: 0;
 	padding: 0.25em;
+	vertical-align: middle;
 }
 
 /* Textareas */
 textarea {
-	height: 7.1em;
 	overflow: auto;
 }
 
 /* Radio buttons and checkboxes */
-.radio, .checkbox {
-	margin-bottom: 1.45em;
-	margin-top: 1.45em;
-}
+.radio, .checkbox {}
 
 	.radio label, .checkbox label {
 		display: inline-block;
@@ -291,11 +284,6 @@ textarea {
 	}
 
 /* Submit buttons */
-.buttons {
-	margin-bottom: 1.35em;
-	margin-top: 1.35em;
-}
-
 input[type=button],
 input[type=reset],
 input[type=submit],
