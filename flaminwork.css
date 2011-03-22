@@ -138,6 +138,14 @@ pre, code, kbd, samp {
 
 /* =|Texts
 ------------- */
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
 h1, h2, h3, h4, h5, h6, ul, ol, dl, p, table, fieldset, form {
 	font-size: 1em;
 	margin: 0 0 1em 0;
