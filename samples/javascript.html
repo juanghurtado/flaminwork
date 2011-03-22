@@ -1,0 +1,115 @@
+<!doctype html>
+<!--[if lt IE 7]><html lang="en" class="ie ie6 ltie9 ltie8 ltie7"><![endif]-->
+<!--[if IE 7]><html lang="en" class="ie ie7 ltie9 ltie8"><![endif]-->
+<!--[if IE 8]><html lang="en" class="ie ie8 ltie9"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie ie9"><![endif]-->
+<!--[if gt IE 9]><html lang="en" class="ie"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<!--[if IE]><![endif]-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>CSS Helpers - Flaminwork</title>
+	
+	<!-- Styles -->
+	<link href="../flaminwork.css" rel="stylesheet" />
+	<style>
+		#wrapper {
+			width: 960px;
+			margin: 1.5em auto;
+		}
+		
+		.box {
+			background: #eee;
+		}
+		
+		li.even {
+			background: #eee;
+		}
+			
+		li.odd {
+			background: #ccc;
+		}
+		
+		li.first {
+			background: purple;
+			color: #fff;
+		}
+		
+		li.last {
+			background: green;
+			color: #fff;
+		}
+			
+		li.hover {
+			background: red;
+			color: #fff;
+		}
+	</style>
+	
+	<!-- Scripts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+	<script src="../flaminwork.js"></script>
+	<script>
+		jQuery(function() {
+			styleHelper.firstLast('ul', 'li');
+			styleHelper.evenOdd('ul', 'li');
+			styleHelper.addHover('li');
+			
+			expand.init();
+		});
+	</script>
+</head>	
+<body>
+	<div id="wrapper">
+		<h1>Javascript demo</h1>
+		
+		<h2>Style Helper</h2>
+		
+		<ul>
+			<li>This should have <code>class="first"</code> added by JS</li>
+			<li>Lorem</li>
+			<li>Ipsum</li>
+			<li>Dolor</li>
+			<li>Sit</li>
+			<li>Amet</li>
+			<li>Consectetum</li>
+			<li>This should have <code>class="last"</code> added by JS</li>
+		</ul>
+		
+		<h2>Expand blocks</h2>
+		
+		<div class="expand-wrapper">
+			<h3 class="expand-title">Click me!</h3>
+			
+			<div class="expand-body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		
+		<hr class="separator" />
+		
+		<div class="expand-wrapper">
+			<h3 class="expand-title">Click me!</h3>
+			
+			<div class="expand-body visible">
+				<p><strong>I will be visible by default!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		
+		<hr class="separator" />
+		
+		<div class="expand-wrapper">
+			<h3 class="expand-title">Click me!</h3>
+			
+			<div class="expand-body fade">
+				<p><strong>I will have a fade effect!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div><!-- #wrapper -->
+</body>
+</html>
