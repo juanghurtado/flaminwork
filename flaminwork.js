@@ -16,58 +16,6 @@
 if (typeof jQuery != "undefined") {
 	
 	/* =EXPAND BLOCKS
-	----------------------------------------------------------------------------------
-	2.1.Resumen:
-	
-		Este script nos permitirá definir bloques expandibles, esto es, bloques
-		que se mostrarán u ocultarán mediante el pulsado de otro elemento.
-	
-	2.2.Funcionamiento:
-	
-		El script busca dos elementos que deben estar envueltos dentro de otro
-		cuya clase CSS debe ser "expand-wrapper":
-		
-		- Un elemento con clase CSS "expand-title", que actuará como "gatillo"
-			para mostrar u ocultar el bloque destino
-		- Un elemento con clase CSS "expand-body", que será el bloque que se
-			mostrará u ocultará según el caso
-			
-		Una vez encontrados todos estos elementos, el funcionamiento por defecto
-		del script será el de ocultar el bloque con clase CSS "expand-body",
-		aunque podemos modificar este comportamiento haciendo que el bloque
-		sea visible añadiendo la clase "visible" al bloque.
-		
-		Además de ocultar o mostrar este bloque en la carga de la página, el
-		script añade un evento "onclick" al elemento con clase CSS "expand-title".
-		Este evento se dispara al clickar en el elemento, y se encargará de mostrar
-		u ocultar el bloque con clase CSS "expand-body" según convenga: lo ocultará
-		si era visible, y lo mostrará si estaba oculto.
-		
-		En el proceso se añaden y quitan una serie de clases CSS a ciertos elementos
-		para facilitar su estilizado:
-		
-		- Al elemento con clase "expand-title":
-			* Se le añade la clase "opened" si el bloque destino está visible
-			* Se le añade la clase "closed" si el bloque destino está oculto
-	
-	2.3.Estructuras HTML de ejemplo:
-		
-		Ejemplo simple:
-		
-		<div class="expand-wrapper">
-			<h1 class="expand-title">expand-title</h1>
-			<p class="expand-body">Lorem ipsum dolor sit amet…</p>
-		</div>
-		
-		Ejemplo con el bloque destino definido como visible en la carga de página:
-		
-		<div class="expand-wrapper">
-			<p><strong class="expand-title">expand-title</strong></p>
-			<div class="expand-body visible">
-				<p>Lorem ipsum dolor sit amet…</p>
-				<p>Lorem ipsum dolor sit amet…</p>
-			</p>
-		</div>
 	---------------------------------------------------------------------------------- */
 	var expand = {
 		init : function() {
@@ -124,28 +72,6 @@ if (typeof jQuery != "undefined") {
 	};
 	
 	/* =STYLE HELPER
-	----------------------------------------------------------------------------------
-	5.1.Resumen:
-	
-		Este script engloba algunos metodos para facilitar la estilización de
-		elementos de manera sencilla, supliendo algunas de las carencias de soporte
-		en lo referente a CSS. P. ej. un metodo para añadir clases CSS específicas
-		al primer y al último elemento de un grupo.
-	
-	5.2.Funcionamiento:
-	
-		firstLast(parent,child): Este método busca todos los "children" dentro de "parent",
-								y al primero le coloca la clase CSS "first" y al último
-								la clase CSS "last"
-								
-		odd(parent,child): Este método busca todos los "children" dentro de "parent",
-								y coloca la clase CSS "par" a los pares, e "impar" a los
-								impares
-								
-		addHover(elements): Este método añade la clase CSS "hover" a todos los "elements"
-								cuando el ratón pasa por encima de ellos y lo quita cuando
-								ya no pasa por encima
-	
 	---------------------------------------------------------------------------------- */
 	var styleHelper = {
 
