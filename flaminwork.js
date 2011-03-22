@@ -87,11 +87,6 @@ if (typeof jQuery != "undefined") {
 		
 		evenOdd : function(parent, child) {
 			jQuery(parent).each(function() {
-				// No seguimos el nombrado lógico para la clase, ya que jQuery
-				// obtiene los pares/impares según un índice 0, es decir, para
-				// jQuery el primero elemento de una lista es par porque su
-				// índice es igual a cero, siendo impar el segundo elemento.
-				// Para nuestras intenciones este comportamiento no es correcto
 				jQuery(this).children(child +':even')
 					.addClass('odd');
 				
