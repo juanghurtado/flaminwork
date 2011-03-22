@@ -1,0 +1,259 @@
+<!doctype html>
+<!--[if lt IE 7]><html lang="en" class="ie ie6 ltie9 ltie8 ltie7"><![endif]-->
+<!--[if IE 7]><html lang="en" class="ie ie7 ltie9 ltie8"><![endif]-->
+<!--[if IE 8]><html lang="en" class="ie ie8 ltie9"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie ie9"><![endif]-->
+<!--[if gt IE 9]><html lang="en" class="ie"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<!--[if IE]><![endif]-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>CSS Helpers - Flaminwork</title>
+	
+	<!-- Styles -->
+	<link href="../flaminwork.css" rel="stylesheet" />
+	<style>
+		#wrapper {
+			width: 960px;
+			margin: 1.5em auto;
+		}
+		
+		.box {
+			background: #eee;
+		}
+	</style>
+	
+	<!-- Scripts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+	<script src="../flaminwork.js"></script>
+</head>	
+<body>
+	<div id="wrapper">
+		<h1>CSS Helpers</h1>
+		
+		<div class="group">
+			<p class="left width-30">This has <code>class="left width-30"</code>: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			
+			<p class="right width-30">This has <code>class="right width-30"</code>: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		
+		<hr class="separator" />
+		
+		<p class="text-align-left">This is left aligned: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		
+		<hr class="separator" />
+		
+		<p class="text-align-right">This is right aligned: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		
+		<hr class="separator" />
+		
+		<p class="text-align-center">This is center aligned: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		
+		<hr class="separator" />
+		
+		<p class="hide">THIS WILL BE VISUALLY HIDDEN!</p>
+		
+		<div class="margin-bottom-1-5">
+			<span class="display-block">This should be inline, but it is block.</span>
+			<span class="display-inline-block">This should be inline, but it is inline-block.</span>
+			
+			<p class="display-inline">And this should be block, but it's inline.</p>
+		</div>
+		
+		<hr class="separator" />
+		
+		<!-- class="box" for demo purpose only -->
+		<div class="group margin-bottom-1-5">
+			<div class="col width-03 append-01">
+				<div class="box margin-top-0-5">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-top-1-0">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-top-1-5">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-top-2-0">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-top-2-5">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-top-3-0">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-top-3-5">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-top-4-0">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-top-4-5">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-top-5-0">Box!</div>
+			</div>
+			<div class="col width-10">
+				<div class="box margin-left-0-5">Box!</div>
+				<div class="box margin-left-1-0">Box!</div>
+				<div class="box margin-left-1-5">Box!</div>
+				<div class="box margin-left-2-0">Box!</div>
+				<div class="box margin-left-2-5">Box!</div>
+				<div class="box margin-left-3-0">Box!</div>
+				<div class="box margin-left-3-5">Box!</div>
+				<div class="box margin-left-4-0">Box!</div>
+				<div class="box margin-left-4-5">Box!</div>
+				<div class="box margin-left-5-0">Box!</div>
+			</div>
+			<div class="col width-10">
+				<div class="box margin-right-0-5">Box!</div>
+				<div class="box margin-right-1-0">Box!</div>
+				<div class="box margin-right-1-5">Box!</div>
+				<div class="box margin-right-2-0">Box!</div>
+				<div class="box margin-right-2-5">Box!</div>
+				<div class="box margin-right-3-0">Box!</div>
+				<div class="box margin-right-3-5">Box!</div>
+				<div class="box margin-right-4-0">Box!</div>
+				<div class="box margin-right-4-5">Box!</div>
+				<div class="box margin-right-5-0">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-bottom-0-5">Box!</div>
+				<div class="box">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-bottom-1-0">Box!</div>
+				<div class="box">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-bottom-1-5">Box!</div>
+				<div class="box">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-bottom-2-0">Box!</div>
+				<div class="box">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-bottom-2-5">Box!</div>
+				<div class="box">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-bottom-3-0">Box!</div>
+				<div class="box">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-bottom-3-5">Box!</div>
+				<div class="box">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-bottom-4-0">Box!</div>
+				<div class="box">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box margin-bottom-4-5">Box!</div>
+				<div class="box">Box!</div>
+			</div>
+			<div class="col width-03">
+				<div class="box margin-bottom-5-0">Box!</div>
+				<div class="box">Box!</div>
+			</div>
+		</div>
+		
+		<hr class="separator" />
+		
+		<!-- class="box" for demo purpose only -->
+		<div class="group margin-bottom-1-5">
+			<div class="col width-03 append-01">
+				<div class="box padding-top-0-5">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-top-1-0">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-top-1-5">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-top-2-0">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-top-2-5">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-top-3-0">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-top-3-5">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-top-4-0">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-top-4-5">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-top-5-0">Box!</div>
+			</div>
+			<div class="col width-10">
+				<div class="box padding-left-0-5">Box!</div>
+				<div class="box padding-left-1-0">Box!</div>
+				<div class="box padding-left-1-5">Box!</div>
+				<div class="box padding-left-2-0">Box!</div>
+				<div class="box padding-left-2-5">Box!</div>
+				<div class="box padding-left-3-0">Box!</div>
+				<div class="box padding-left-3-5">Box!</div>
+				<div class="box padding-left-4-0">Box!</div>
+				<div class="box padding-left-4-5">Box!</div>
+				<div class="box padding-left-5-0">Box!</div>
+			</div>
+			<div class="col width-10 text-align-right">
+				<div class="box padding-right-0-5">Box!</div>
+				<div class="box padding-right-1-0">Box!</div>
+				<div class="box padding-right-1-5">Box!</div>
+				<div class="box padding-right-2-0">Box!</div>
+				<div class="box padding-right-2-5">Box!</div>
+				<div class="box padding-right-3-0">Box!</div>
+				<div class="box padding-right-3-5">Box!</div>
+				<div class="box padding-right-4-0">Box!</div>
+				<div class="box padding-right-4-5">Box!</div>
+				<div class="box padding-right-5-0">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-bottom-0-5">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-bottom-1-0">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-bottom-1-5">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-bottom-2-0">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-bottom-2-5">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-bottom-3-0">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-bottom-3-5">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-bottom-4-0">Box!</div>
+			</div>
+			<div class="col width-03 append-01">
+				<div class="box padding-bottom-4-5">Box!</div>
+			</div>
+			<div class="col width-03">
+				<div class="box padding-bottom-5-0">Box!</div>
+			</div>
+		</div>
+	</div><!-- #wrapper -->
+</body>
+</html>

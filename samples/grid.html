@@ -111,18 +111,32 @@
 			<fieldset>
 				<legend>Sample</legend>
 				
+				<div class="msg error">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				</div>
+				
+				<div class="msg warning">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				</div>
+				
+				<div class="msg success">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				</div>
+				
 				<div class="group">
 					<div class="col width-49 append-01">
 						<p>
 							<label for="text1">Lorem ipsum</label>
 							<input type="text" name="text" class="width-98" id="text1" />
+							<span class="hint">Lorem ipsum dolor sit</span>
 						</p>
 					</div>
 					
 					<div class="col width-49 prepend-01">
 						<p>
-							<label for="text2">Lorem ipsum</label>
-							<input type="text" name="text" class="width-98" id="text2" />
+							<label for="text2">Lorem ipsum <span class="required">(*)</span></label>
+							<input type="text" name="text" class="width-98 error" id="text2" />
+							<span class="error">Error ipsum dolor</span>
 						</p>
 					</div>
 				</div>
@@ -143,7 +157,10 @@
 					<div class="col width-32 prepend-01">
 						<p>
 							<label for="text5">Lorem ipsum</label>
-							<input type="text" name="text" class="width-96" id="text5" />
+							<select id="text5" class="width-99">
+								<option>Lorem ipsum</option>
+								<option>Dolor sit amet</option>
+							</select>
 						</p>
 					</div>
 				</div>
@@ -154,13 +171,20 @@
 							<input type="text" name="text" class="width-96" id="text6" />
 						</p>
 					</div>
-					<div class="col width-66">
-						<p>
-							<label for="text7">Lorem ipsum</label>
-							<input type="text" name="text" class="width-98" id="text7" />
+					<div class="col width-66 margin-top-1-5">
+						<p class="radio">
+							<input type="radio" name="radio1" id="radio1" /> <label for="radio1">Lorem ipsum 1</label>
+							<input type="radio" name="radio2" id="radio2" /> <label for="radio2">Lorem ipsum 2</label>
+							<input type="radio" name="radio3" id="radio3" /> <label for="radio3">Lorem ipsum 3</label>
 						</p>
 					</div>
 				</div>
+				
+				<p>
+					<input type="submit" id="submit" name="submit" value="Submit" />
+					<input type="button" id="inputbutton" name="inputbutton" value="Input Button" />
+					<button id="button" name="button">Button</button>
+				</p>
 			</fieldset>
 		</form>
 		
