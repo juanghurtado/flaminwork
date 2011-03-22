@@ -1,0 +1,134 @@
+<!doctype html>
+<!--[if lt IE 7]><html lang="en" class="ie ie6 ltie9 ltie8 ltie7"><![endif]-->
+<!--[if IE 7]><html lang="en" class="ie ie7 ltie9 ltie8"><![endif]-->
+<!--[if IE 8]><html lang="en" class="ie ie8 ltie9"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie ie9"><![endif]-->
+<!--[if gt IE 9]><html lang="en" class="ie"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<!--[if IE]><![endif]-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Simple Sample - Flaminwork</title>
+	
+	<!-- Styles -->
+	<link href="../flaminwork.css" rel="stylesheet" />
+	<style>
+		#wrapper {
+			width: 960px;
+			margin: 1.5em auto;
+		}
+	</style>
+	
+	<!-- Scripts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+	<script src="../flaminwork.js"></script>
+</head>	
+<body>
+	<div id="wrapper">
+		<h1>Form components</h1>
+
+		<form>
+			<fieldset>
+				<legend>Sample</legend>
+		
+				<div class="msg error">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				</div>
+		
+				<div class="msg warning">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				</div>
+		
+				<div class="msg success">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				</div>
+		
+				<div class="group">
+					<div class="col width-49 append-01">
+						<p>
+							<label for="text1">Lorem ipsum</label>
+							<input type="text" name="text" class="width-98" id="text1" />
+							<span class="hint">Lorem ipsum dolor sit</span>
+						</p>
+					</div>
+			
+					<div class="col width-49 prepend-01">
+						<p>
+							<label for="text2">Lorem ipsum <span class="required">(*)</span></label>
+							<input type="text" name="text" class="width-98 error" id="text2" />
+							<span class="error">Error ipsum dolor</span>
+						</p>
+					</div>
+				</div>
+		
+				<div class="group">
+					<div class="col width-32 append-01">
+						<p>
+							<label for="text3">Lorem ipsum</label>
+							<input type="text" name="text" class="width-96" id="text3" />
+						</p>
+					</div>
+					<div class="col width-32 append-01 prepend-01">
+						<p>
+							<label for="text4">Lorem ipsum</label>
+							<input type="text" name="text" class="width-96" id="text4" />
+						</p>
+					</div>
+					<div class="col width-32 prepend-01">
+						<p>
+							<label for="text5">Lorem ipsum</label>
+							<select id="text5" class="width-99">
+								<option>Lorem ipsum</option>
+								<option>Dolor sit amet</option>
+							</select>
+						</p>
+					</div>
+				</div>
+				<div class="group">
+					<div class="col width-32 append-02">
+						<p>
+							<label for="text6">Lorem ipsum</label>
+							<input type="text" name="text" class="width-96" id="text6" />
+						</p>
+					</div>
+					<div class="col width-66 margin-top-1-5">
+						<p class="radio">
+							<input type="radio" name="radio1" id="radio1" /> <label for="radio1">Lorem ipsum 1</label>
+							<input type="radio" name="radio2" id="radio2" /> <label for="radio2">Lorem ipsum 2</label>
+							<input type="radio" name="radio3" id="radio3" /> <label for="radio3">Lorem ipsum 3</label>
+						</p>
+					</div>
+				</div>
+				
+				<div class="group">
+						<div class="col width-56">
+							<p>
+								<label for="textarea">Lorem ipsum</label>
+								<textarea name="textarea" class="width-98" id="textarea"></textarea>
+							</p>
+						</div>
+						
+						<div class="col width-42 prepend-02 margin-top-1-5">
+							<p class="checkbox">
+								<input type="checkbox" name="checkbox1" id="checkbox1" /> <label for="checkbox1">Lorem ipsum 1</label>
+								<input type="checkbox" name="checkbox2" id="checkbox2" /> <label for="checkbox2">Lorem ipsum 2</label>
+								<input type="checkbox" name="checkbox3" id="checkbox3" /> <label for="checkbox3">Lorem ipsum 3</label>
+							</p>
+						</div>
+				</div>
+		
+				<p>
+					<input type="submit" id="submit" name="submit" value="Submit" />
+					<input type="button" id="inputbutton" name="inputbutton" value="Input Button" />
+					<button id="button" name="button">Button</button>
+				</p>
+			</fieldset>
+		</form>
+	</div><!-- #wrapper -->
+</body>
+</html>
