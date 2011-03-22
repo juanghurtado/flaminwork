@@ -130,6 +130,12 @@ body {
 	color: #444444;
 }
 
+/* =|Code
+------------- */
+pre, code, kbd, samp {
+	font-family: monospace, sans-serif;
+}
+
 /* =|Texts
 ------------- */
 h1, h2, h3, h4, h5, h6, ul, ol, dl, p, table, fieldset, form {
@@ -310,7 +316,11 @@ button {
 /* Form component error message */
 .error {
 	color: #8a1f11;
-	margin: 0 1em;
+}
+
+input.error, textarea.error, select.error {
+	background-color: #FFF7F5;
+	border-color: #8a1f11;
 }
 
 /* Form component hint */
@@ -323,12 +333,16 @@ button {
 /* Global block messages */
 div.msg, div.messages {
 	border: 2px solid #ddd;
-	margin: 1.4em 0;
+	margin: 0 0 1.5em 0;
 	padding: .6333em 0.75em;
 }
 
+	div.msg p, div.messages p {
+		margin: 0;
+	}
+
 	/* Block error */
-	div.msg.error. div.messages.error {
+	div.msg.error, div.messages.error {
 		background: #FBE3E4;
 		border-color: #FBC2C4;
 		color: #8a1f11;
