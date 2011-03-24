@@ -1,7 +1,7 @@
 /* ----------------------------------------------------------------------------------
 	Flaminwork Javascript Framework
 	
-	Version:	0.1beta
+	Version:	0.1-RC1
 	Encoding:	UTF-8
 	Authors:	
 		Juan G. Hurtado 	[juan.g.hurtado@gmail.com]
