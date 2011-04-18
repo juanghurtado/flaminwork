@@ -4,6 +4,12 @@ This is just a tiny front-end framework for lazy developers. HTML5, CSS and Java
 
 ## Changelog ##
 
+### v.0.1-RC1 (April 18, 2011) ###
+
+* Added minified files
+* Adjusted vertical spacing for <code>PRE</code> elements
+* Added aliases for floating CSS helpers
+
 ### v.0.1-beta (March 22, 2011) ###
 
 First version. Basic funcionality:
