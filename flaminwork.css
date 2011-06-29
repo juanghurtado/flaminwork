@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------------
 	Flaminwork CSS Framework
 	
-	Version:	0.1-RC1
+	Version:	0.1-RC2
 	Encoding:	UTF-8
 	Authors:	
 		Juan G. Hurtado 	[juan.g.hurtado@gmail.com]
@@ -461,6 +461,36 @@ div.msg, div.messages {
 
 .inline-block, .display-inline-block {
 	display: inline-block !important;
+}
+
+/* =|Border radius
+---------------------------- */
+.border-radius-3 {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.border-radius-5 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.border-radius-10 {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* =|Text shadow
+---------------------------- */
+.text-shadow-bright {
+  text-shadow: 1px 1px 0 rgba(255,255,255,.5);
+}
+
+.text-shadow-dark {
+  text-shadow: 1px 1px 0 rgba(0,0,0,.5);
 }
 
 /* =|Text alignment

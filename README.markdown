@@ -4,6 +4,11 @@ This is just a tiny front-end framework for lazy developers. HTML5, CSS and Java
 
 ## Changelog ##
 
+### v.0.1-RC2 (June 29, 2011) ###
+
+* Added classes for common border radius: border-radius-3, border-radius-5, border-radius-10
+* Added classes for common text shadow: text-shadow-dark, text-shadow-bright
+
 ### v.0.1-RC1 (April 18, 2011) ###
 
 * Added minified files
