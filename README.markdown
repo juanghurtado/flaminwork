@@ -39,7 +39,7 @@ If you want a fresh HTML5 template example to start your project, you can find i
 	
 ## Demo ##
 
-You can watch what Flaminwork does by [looking at the live demo](http://flaminwork.com/demo/), or sneaking around the files inside <code>samples</code> folder on the [zip file](https://github.com/juanghurtado/flaminwork/zipball/master).
+You can watch what Flaminwork does by sneaking around the files inside <code>samples</code> folder on the [zip file](https://github.com/juanghurtado/flaminwork/zipball/master).
 
 ## Authors ##
 
